@@ -1,3 +1,6 @@
+%YAML 1.2
+---
+
 title: Pizza Sauce
 
 description:
@@ -38,6 +41,7 @@ ingredients:
     unit: teaspoon
 
 directions:
-  - Add onion, salt, oregano, and pepper flakes to a pan on medium heat until brown (5 minutes).
+  - Add onion, salt, oregano, and pepper flakes to a pan on medium heat until
+    brown (5 minutes).
   - Add garlic, crushed tomatoes, sugar.
   - Turn to low head and simmer for 30 minutes.
