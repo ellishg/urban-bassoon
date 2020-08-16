@@ -6,7 +6,6 @@ addons:
       - yamllint
 
 os:
-  - macos
   - linux
 
 script:
