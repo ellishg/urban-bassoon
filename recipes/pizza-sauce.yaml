@@ -24,7 +24,7 @@ ingredients:
     amount: 1
     unit: teaspoon
 
-  - name: crushed pepper flakes
+  - name: crushed red pepper flakes
     amount: 0.5
     unit: teaspoon
 
@@ -41,7 +41,7 @@ ingredients:
     unit: teaspoon
 
 directions:
-  - Add onion, salt, oregano, and pepper flakes to a pan on medium heat until
-    brown (5 minutes).
-  - Add garlic, crushed tomatoes, sugar.
-  - Turn to low head and simmer for 30 minutes.
+  - Add onion, salt, oregano, and crushed red pepper flakes to a pan on medium
+    heat until brown (5 minutes).
+  - Add minced garlic, crushed tomatoes, and sugar.
+  - Turn to low heat and simmer for 30 minutes.
