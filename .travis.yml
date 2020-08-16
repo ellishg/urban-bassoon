@@ -1,0 +1,14 @@
+language: generic
+
+addons:
+  apt:
+    packages:
+      - yamllint
+
+os:
+  - macos
+  - linux
+
+script:
+  - yamllint recipe-list.yaml
+  - yamllint recipes/
