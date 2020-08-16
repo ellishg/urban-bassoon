@@ -1,5 +1,5 @@
 # urban-bassoon
-A database of recipes.
+A database of food recipes.
 
 [![Build Status](https://travis-ci.org/ellishg/urban-bassoon.svg?branch=main)](https://travis-ci.org/ellishg/urban-bassoon)
 
