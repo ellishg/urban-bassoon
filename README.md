@@ -11,5 +11,6 @@ You will need to install `yamllint` at [https://github.com/adrienverge/yamllint]
 
 ```bash
 yamllint recipe-list.yaml
+yamllint unit-conversions.yaml
 yamllint recipes/
 ```
