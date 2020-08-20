@@ -13,8 +13,6 @@ ingredients:
 
   - name: onion
     amount: 1
-    # TODO: Make units optional
-    unit: none
 
   - name: salt
     amount: 0.75
