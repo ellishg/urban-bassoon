@@ -10,4 +10,5 @@ os:
 
 script:
   - yamllint recipe-list.yaml
+  - yamllint unit-conversions.yaml
   - yamllint recipes/
