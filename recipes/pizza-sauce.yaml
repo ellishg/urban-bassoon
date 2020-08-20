@@ -16,15 +16,15 @@ ingredients:
 
   - name: salt
     amount: 0.75
-    unit: teaspoon
+    unit: teaspoons
 
   - name: oregano
     amount: 1
-    unit: teaspoon
+    unit: teaspoons
 
   - name: crushed red pepper flakes
     amount: 0.5
-    unit: teaspoon
+    unit: teaspoons
 
   - name: garlic
     amount: 3
@@ -36,7 +36,7 @@ ingredients:
 
   - name: sugar
     amount: 0.25
-    unit: teaspoon
+    unit: teaspoons
 
 directions:
   - Add onion, salt, oregano, and crushed red pepper flakes to a pan on medium
