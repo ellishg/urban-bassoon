@@ -14,3 +14,6 @@ yamllint recipe-list.yaml
 yamllint unit-conversions.yaml
 yamllint recipes/
 ```
+
+## Images
+All images should formatted as a `.jpg` with no `EXIF`, `XMP`, or `IPTC` metadata, and be saved to the `images` directory.
