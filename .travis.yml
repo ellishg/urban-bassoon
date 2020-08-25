@@ -5,14 +5,11 @@ addons:
     packages:
       - python-yaml
       - yamllint
-  snaps:
-    - black
 
 os:
   - linux
 
 script:
-  - black --check build.py
   - python build.py
   - yamllint .
   - git diff --quiet
