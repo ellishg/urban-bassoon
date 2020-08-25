@@ -5,13 +5,16 @@ python:
 addons:
   apt:
     packages:
-      - python-yaml
       - yamllint
 
 os:
   - linux
 
+install:
+  - pip install pyyaml black
+
 script:
+  - black --check build.py
   - python build.py
   - yamllint .
   - git diff --quiet
