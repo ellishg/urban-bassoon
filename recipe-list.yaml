@@ -1,10 +1,13 @@
-%YAML 1.2
----
-
-# The list of recipes.
-# TODO: Separate these recipes into categories.
-- pizza-dough
-- pizza-sauce
-- sourdough-starter
-- sourdough-bread
-- cookies
+- filename: cookies.yaml
+  title: Cookies
+- filename: pizza-dough.yaml
+  title: Pizza Dough
+- filename: pizza-sauce.yaml
+  tags:
+  - dinner
+  - pizza
+  title: Pizza Sauce
+- filename: sourdough-bread.yaml
+  title: Sourdough Bread
+- filename: sourdough-starter.yaml
+  title: Sourdough Starter

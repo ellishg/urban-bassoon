@@ -3,12 +3,15 @@ language: generic
 addons:
   apt:
     packages:
+      - python-yaml
+      - python-black
       - yamllint
 
 os:
   - linux
 
 script:
-  - yamllint recipe-list.yaml
-  - yamllint unit-conversions.yaml
-  - yamllint recipes/
+  - black --check build.py
+  - python build.py
+  - yamllint .
+  - git diff --quiet
