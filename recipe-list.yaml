@@ -1,6 +1,11 @@
 - filename: cookies.yaml
+  tags:
+  - dessert
   title: Cookies
 - filename: pizza-dough.yaml
+  tags:
+  - dinner
+  - pizza
   title: Pizza Dough
 - filename: pizza-sauce.yaml
   tags:
@@ -8,6 +13,10 @@
   - pizza
   title: Pizza Sauce
 - filename: sourdough-bread.yaml
+  tags:
+  - bread
   title: Sourdough Bread
 - filename: sourdough-starter.yaml
+  tags:
+  - bread
   title: Sourdough Starter
