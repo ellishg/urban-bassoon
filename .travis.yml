@@ -1,4 +1,5 @@
 language: generic
+python: "3.8"
 
 addons:
   apt:
