@@ -4,8 +4,9 @@ addons:
   apt:
     packages:
       - python-yaml
-      - python-black
       - yamllint
+  snaps:
+    - black
 
 os:
   - linux
