@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
-import yaml
-import os
+import sys
+from pathlib import Path
+import json, yaml
 
 
 class Ingredient:
@@ -22,14 +23,15 @@ class Ingredient:
 
 
 class Recipe:
-    def __init__(self, recipe):
+    def __init__(self, recipe, filename):
+        self.filename = filename
         self.title = recipe["title"]
         self.description = recipe["description"]
         self.ingredients = [
             Ingredient(ingredient) for ingredient in recipe["ingredients"]
         ]
         self.directions = recipe["directions"]
-        self.tags = recipe["tags"] if "tags" in recipe else None
+        self.tags = recipe["tags"] if "tags" in recipe else []
         self.images = recipe["images"] if "images" in recipe else None
         assert self.is_valid()
 
@@ -41,18 +43,36 @@ class Recipe:
             + ([isinstance(image, str) for image in self.images] if self.images else [])
         )
 
+    def get_recipe_info(self):
+        return {
+            "title": self.title,
+            "filename": self.filename,
+            "tags": self.tags,
+        }
 
-def get_recipe_info(recipe_filename):
-    with open(os.path.join("recipes", recipe_filename)) as file:
-        recipe = Recipe(yaml.safe_load(file))
-    return {
-        "title": recipe.title,
-        "filename": recipe_filename,
-        **({"tags": recipe.tags} if recipe.tags else {}),
-    }
+    @staticmethod
+    def load(path):
+        with path.open() as file:
+            return Recipe(yaml.safe_load(file), path.name)
 
 
-recipe_list = [get_recipe_info(filename) for filename in sorted(os.listdir("recipes"))]
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print(f"Usage: {sys.argv[0]} [output_path|--dry-run]")
+        exit(1)
 
-with open("recipe-list.yaml", "w") as file:
-    file.write(yaml.safe_dump(recipe_list))
+    project_root = Path(__file__).resolve().parent
+
+    recipes = [
+        Recipe.load(path) for path in sorted(project_root.joinpath("recipes").iterdir())
+    ]
+
+    recipe_list = [recipe.get_recipe_info() for recipe in recipes]
+
+    if sys.argv[1] != "--dry-run":
+
+        output_path = Path(sys.argv[1]).resolve()
+        output_path.mkdir(exist_ok=True)
+
+        with output_path.joinpath("recipe-list.json").open("w") as file:
+            json.dump(recipe_list, file)
