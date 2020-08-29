@@ -7,20 +7,23 @@ A database of food recipes used in [https://github.com/ellishg/laughing-potato](
 To add a recipe, simply create a new `.yaml` file in the `recipes/` directory with the following scheme.
 
 ```yaml
-- title: The Recipe Title
+title: The Recipe Title
 
-- description: A brief description of the recipe.
+description: A brief description of the recipe.
 
-- ingredients:
+ingredients:
   - name: The ingredient name
   - amount: [number]
   - unit: (optional)
 
-- directions:
+directions:
   - A list of instructions.
 
 tags:
   - An optional list of tags.
+
+images:
+  - An optional list of image paths.
 ```
 
 ## Ingredients
@@ -28,8 +31,8 @@ To enable metric/imperial unit conversions for an ingredient, add to the `unit-c
 
 ```yaml
 flour:
-    cups: 1
-    grams: 136
+  cups: 1
+  grams: 136
 ```
 
 ## Verify Files
