@@ -5,55 +5,68 @@ from pathlib import Path
 import json, yaml
 
 
-class Ingredient:
-    def __init__(self, ingredient):
-        self.name = ingredient["name"]
-        self.amount = ingredient["amount"]
-        self.unit = ingredient["unit"] if "unit" in ingredient else None
+class Ingredient(dict):
+    def __init__(self, data):
+        dict.__init__(
+            self,
+            **{
+                key: value
+                for key, value in data.items()
+                if key in ["name", "amount", "unit"]
+            },
+        )
         assert self.is_valid()
 
     def is_valid(self):
         return all(
             [
-                isinstance(self.name, str),
-                isinstance(self.amount, float) or isinstance(self.amount, int),
+                isinstance(self["name"], str),
+                isinstance(self["amount"], int) or isinstance(self["amount"], float),
+                isinstance(self["unit"], str) if "unit" in self else True,
             ]
-            + ([isinstance(self.unit, str)] if self.unit else [])
         )
 
 
-class Recipe:
-    def __init__(self, recipe, filename):
+class Recipe(dict):
+    def __init__(self, data, filename):
+        # TODO: Assert filename has no spaces and is url-safe.
         self.filename = filename
-        self.title = recipe["title"]
-        self.description = recipe["description"]
-        self.ingredients = [
-            Ingredient(ingredient) for ingredient in recipe["ingredients"]
-        ]
-        self.directions = recipe["directions"]
-        self.tags = recipe["tags"] if "tags" in recipe else []
-        self.images = recipe["images"] if "images" in recipe else None
+        data.setdefault("tags", [])
+        data.setdefault("images", [])
+        dict.__init__(
+            self,
+            ingredients=[Ingredient(ingredient) for ingredient in data["ingredients"]],
+            **{
+                key: value
+                for key, value in data.items()
+                if key in ["title", "description", "directions", "tags", "images"]
+            },
+        )
         assert self.is_valid()
 
     def is_valid(self):
         return all(
-            [isinstance(self.title, str), isinstance(self.description, str),]
-            + [isinstance(direction, str) for direction in self.directions]
-            + ([isinstance(tag, str) for tag in self.tags] if self.tags else [])
-            + ([isinstance(image, str) for image in self.images] if self.images else [])
+            [isinstance(self["title"], str), isinstance(self["description"], str),]
+            + [isinstance(direction, str) for direction in self["directions"]]
+            + ([isinstance(tag, str) for tag in self["tags"]] if "tags" in self else [])
+            + (
+                [isinstance(image, str) for image in self["images"]]
+                if "images" in self
+                else []
+            )
         )
 
     def get_recipe_info(self):
         return {
-            "title": self.title,
+            "title": self["title"],
             "filename": self.filename,
-            "tags": self.tags,
+            "tags": self["tags"],
         }
 
     @staticmethod
     def load(path):
         with path.open() as file:
-            return Recipe(yaml.safe_load(file), path.name)
+            return Recipe(yaml.safe_load(file), path.stem)
 
 
 if __name__ == "__main__":
@@ -69,6 +82,9 @@ if __name__ == "__main__":
 
     recipe_list = [recipe.get_recipe_info() for recipe in recipes]
 
+    with project_root.joinpath("unit-conversions.yaml").open() as file:
+        unit_conversions = yaml.safe_load(file)
+
     if sys.argv[1] != "--dry-run":
 
         output_path = Path(sys.argv[1]).resolve()
@@ -76,3 +92,10 @@ if __name__ == "__main__":
 
         with output_path.joinpath("recipe-list.json").open("w") as file:
             json.dump(recipe_list, file)
+
+        with output_path.joinpath("unit-conversions.json").open("w") as file:
+            json.dump(unit_conversions, file)
+
+        for recipe in recipes:
+            with output_path.joinpath(recipe.filename + ".json").open("w") as file:
+                json.dump(recipe, file)
