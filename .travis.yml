@@ -11,7 +11,7 @@ os:
   - linux
 
 install:
-  - pip install black
+  - pip install pyyaml black
 
 script:
   - black --check build.py
