@@ -11,10 +11,9 @@ os:
   - linux
 
 install:
-  - pip install pyyaml black
+  - pip install pyyaml
 
 script:
-  - black --check build.py
   - python build.py --dry-run
   - yamllint .
   - git diff --quiet
