@@ -11,19 +11,27 @@ title: The Recipe Title
 
 description: A brief description of the recipe.
 
+# A list of ingredients. The unit is optional, but should be something like grams, cups, tablespoons, etc.
 ingredients:
-  - name: The ingredient name
-  - amount: [number]
-  - unit: (optional)
+  - name: flour
+    amount: 3
+    unit: cups
+
+  - name: eggs
+    amount: 2
 
 directions:
   - A list of instructions.
+  - They describe the steps of the recipe.
 
+# An optional list of tags to help search for this recipe.
 tags:
-  - An optional list of tags.
+  - dinner
+  - cheese
 
+# An optional list of image paths.
 images:
-  - An optional list of image paths.
+  - images/sourdough-bread.jpg
 ```
 
 ## Ingredients
