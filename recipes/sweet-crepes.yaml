@@ -4,9 +4,8 @@ description:
   Makes about twelve sweet crêpes.
 
 ingredients:
-  - name: flour
-    amount: 0.5
-    unit: cups
+  - name: eggs
+    amount: 2
 
   - name: milk
     amount: 0.5
@@ -16,8 +15,9 @@ ingredients:
     amount: 0.25
     unit: cups
 
-  - name: eggs
-    amount: 2
+  - name: flour
+    amount: 0.5
+    unit: cups
 
   - name: melted butter
     amount: 2
