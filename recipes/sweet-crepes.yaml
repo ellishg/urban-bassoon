@@ -17,7 +17,7 @@ ingredients:
     unit: cups
 
   - name: eggs
-    amount 2
+    amount: 2
 
   - name: melted butter
     amount: 2
@@ -28,7 +28,7 @@ ingredients:
     unit: tablespoons
 
   - name: pinch of salt
-    amount 1
+    amount: 1
 
 directions:
   - Whisk together eggs, milk, and water in a large bowl.
@@ -37,7 +37,7 @@ directions:
   - Preheat a skillit to high heat.
   - Pour in 1/4 cup of batter and spread to a disk as thin as possible.
   - Cook until the edges start to brown, then flip.
-  
+
 tags:
   - breakfast
   - dessert
