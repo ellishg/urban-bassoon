@@ -15,7 +15,7 @@ class Ingredient(dict):
                 if key in ["name", "amount", "unit"]
             },
         )
-        assert self.is_valid()
+        assert self.is_valid(), f"{data} does not conform to Ingredient"
 
     def is_valid(self):
         return all(
@@ -42,7 +42,7 @@ class Recipe(dict):
                 if key in ["title", "description", "directions", "tags", "images"]
             },
         )
-        assert self.is_valid()
+        assert self.is_valid(), f"{data} does not conform to Recipe"
 
     def is_valid(self):
         return all(
