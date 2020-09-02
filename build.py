@@ -39,7 +39,8 @@ class Recipe(dict):
             **{
                 key: value
                 for key, value in data.items()
-                if key in ["title", "description", "directions", "tags", "images"]
+                if key
+                in ["title", "description", "directions", "tags", "images", "authors"]
             },
         )
         assert self.is_valid(), f"{data} does not conform to Recipe"
@@ -52,6 +53,11 @@ class Recipe(dict):
             + (
                 [isinstance(image, str) for image in self["images"]]
                 if "images" in self
+                else []
+            )
+            + (
+                [isinstance(author, str) for author in self["authors"]]
+                if "authors" in self
                 else []
             )
         )
