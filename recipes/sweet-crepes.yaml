@@ -11,7 +11,7 @@ ingredients:
     amount: 0.5
     unit: cups
 
-  - name: lukewarm water
+  - name: water
     amount: 0.25
     unit: cups
 
@@ -19,7 +19,7 @@ ingredients:
     amount: 0.5
     unit: cups
 
-  - name: melted butter
+  - name: butter
     amount: 2
     unit: tablespoons
 
@@ -31,10 +31,10 @@ ingredients:
     amount: 1
 
 directions:
-  - Whisk together eggs, milk, and water in a large bowl.
+  - Whisk together eggs, milk, and lukewarm water in a large bowl.
   - Add flour and beat until smooth.
   - Mix in melted butter, sugar, and a pinch of salt.
-  - Preheat a skillit to high heat.
+  - Preheat a skillet to high heat.
   - Pour in 1/4 cup of batter and spread to a disk as thin as possible.
   - Cook until the edges start to brown, then flip.
 
