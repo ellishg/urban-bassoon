@@ -3,10 +3,6 @@ title: Deep Dish Pizza Dough
 description:
   Makes two 9 inch deep dish pizza crusts.
 
-bake:
-  time: 45 minutes
-  temperature: 425 °F
-
 ingredients:
   - name: flour
     amount: 3.25
@@ -55,7 +51,7 @@ directions:
     hour.
   - Roll dough into 12 inch circle and place into 9x2 inch pan.
   - Assemble pizza.
-  - Bake uncovered for 30 minutes, then covered with aluminum foid for 15
+  - Bake uncovered for 30 minutes, then covered with aluminum foil for 15
     minutes at 425 °F.
 
 tags:
