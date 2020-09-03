@@ -1,4 +1,4 @@
-title: Pizza Dough
+title: Deep Dish Pizza Dough
 
 description:
   Makes two 9 inch deep dish pizza crusts.
@@ -7,7 +7,6 @@ bake:
   time: 45 minutes
   temperature: 425 °F
 
-# TODO: Convert to grams.
 ingredients:
   - name: flour
     amount: 3.25
@@ -17,6 +16,10 @@ ingredients:
     amount: 0.5
     unit: cups
 
+  - name: sugar
+    amount: 1
+    unit: tablespoons
+
   - name: salt
     amount: 1.25
     unit: teaspoons
@@ -25,7 +28,7 @@ ingredients:
     amount: 2.25
     unit: teaspoons
 
-  - name: warm water
+  - name: water
     amount: 1.25
     unit: cups
 
@@ -38,9 +41,9 @@ ingredients:
     unit: teaspoons
 
 directions:
-  - Combine flour, cornmeal, salt, and sugar in a large bowl.
-  - Add yeast to warm water and add to mixture with with 1/4 cup of melted
-    butter.
+  - Add yeast to warm water in small bowl and let sit for 5 minutes.
+  - Combine flour, cornmeal, sugar, and salt in a large bowl.
+  - Pour the yeast and warm water with 1/4 cup of melted butter into the large bowl.
   - Kneed until dough is soft and supple (4-5 minutes).
   - Make dough into a ball and coat with olive oil.
   - Let rise until doubled in size (1-2 hours).
@@ -52,8 +55,7 @@ directions:
   - Roll dough into 12 inch circle and place into 9x2 inch pan.
   - Assemble pizza.
   - Bake uncovered for 30 minutes, then covered with aluminum foid for 15
-    minutes at 425 degrees.
+    minutes at 425 °F.
 
 tags:
   - dinner
-  - pizza
