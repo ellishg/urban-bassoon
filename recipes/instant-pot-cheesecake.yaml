@@ -7,7 +7,7 @@ ingredients:
     amount: 1
   - unit: Cup
     name: Rolled oats
-    amount: 0
+    amount: 0.5
   - unit: Tbs
     name: Butter
     amount: 1
@@ -22,7 +22,7 @@ ingredients:
     amount: 1
   - unit: Cup
     name: Brown sugar or honey or maple syrup
-    amount: 0
+    amount: 0.25
   - unit: Tbs
     name: Vanilla
     amount: 1
