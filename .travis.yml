@@ -15,5 +15,5 @@ install:
 
 script:
   - python build.py --dry-run
-  - yamllint .
+  - yamllint --no-warnings .
   - git diff --quiet
