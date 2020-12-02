@@ -2,7 +2,6 @@
 A database of food recipes used in [https://github.com/ellishg/laughing-potato](https://github.com/ellishg/laughing-potato).
 
 ![Build and Lint](https://github.com/ellishg/urban-bassoon/workflows/Build%20and%20Lint/badge.svg)
-[![Build Status](https://travis-ci.org/ellishg/urban-bassoon.svg?branch=main)](https://travis-ci.org/ellishg/urban-bassoon)
 
 ## Recipes
 To add a recipe, simply create a new `.yaml` file in the `recipes/` directory with the following scheme.
