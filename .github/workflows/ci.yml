@@ -15,4 +15,4 @@ jobs:
       - name: Lint 🧹
         run: yamllint .
       - name: Build 🔧
-        run: build.py --dry-run
+        run: ./build.py --dry-run
