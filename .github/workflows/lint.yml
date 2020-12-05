@@ -1,7 +1,7 @@
 name: Lint
 "on": [push]
 jobs:
-  build-and-lint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt-get install yamllint

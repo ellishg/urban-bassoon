@@ -1,7 +1,7 @@
 name: Test
 "on": [push]
 jobs:
-  build-and-lint:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python@v1
