@@ -1,0 +1,9 @@
+name: Lint
+"on": [push]
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get install yamllint
+      - uses: actions/checkout@v2
+      - run: yamllint .

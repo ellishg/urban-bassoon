@@ -1,0 +1,12 @@
+name: Test
+"on": [push]
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v1
+      - uses: BSFishy/pip-action@v1
+        with:
+          packages: pyyaml
+      - uses: actions/checkout@v2
+      - run: ./build.py --dry-run
