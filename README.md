@@ -2,7 +2,8 @@
 
 A database of food recipes used in [https://github.com/ellishg/laughing-potato](https://github.com/ellishg/laughing-potato).
 
-![Build and Lint](https://github.com/ellishg/urban-bassoon/workflows/Build%20and%20Lint/badge.svg)
+![Lint](https://github.com/ellishg/urban-bassoon/workflows/Lint/badge.svg)
+![Test](https://github.com/ellishg/urban-bassoon/workflows/Test/badge.svg)
 
 ## Recipes
 
