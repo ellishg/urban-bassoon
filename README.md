@@ -47,14 +47,6 @@ flour:
   grams: 136
 ```
 
-## Verify Files
-
-You will need to install `yamllint` at [https://github.com/adrienverge/yamllint](https://github.com/adrienverge/yamllint) to lint the recipes.
-
-```bash
-yamllint .
-```
-
 ## Images
 
 All images should formatted as a `.jpg` with no `EXIF`, `XMP`, or `IPTC` metadata, and be saved to the `images` directory.
