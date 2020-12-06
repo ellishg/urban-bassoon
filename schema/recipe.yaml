@@ -1,0 +1,43 @@
+$schema: "http://json-schema.org/draft-07/schema"
+type: object
+properties:
+  title:
+    type: string
+  description:
+    type: string
+  ingredients:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        amount:
+          type: number
+        unit:
+          type: string
+      required:
+        - name
+        - amount
+  directions:
+    type: array
+    items:
+      type: string
+  tags:
+    type: array
+    items:
+      type: string
+  images:
+    type: array
+    items:
+      type: string
+  authors:
+    type: array
+    items:
+      type: string
+additionalProperties: false
+required:
+  - title
+  - description
+  - ingredients
+  - directions

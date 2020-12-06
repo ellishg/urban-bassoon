@@ -1,0 +1,16 @@
+{
+  "name": "urban-bassoon",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://ellishg.github.io/urban-bassoon",
+  "license": "MIT",
+  "author": "Ellis Hoag <ellis.sparky.hoag@gmail.com>",
+  "scripts": {
+    "prelint": "ajv -s schema/recipe.yaml -d \"recipes/*\"",
+    "lint": "yamllint recipes/* unit-conversions.yaml schema/*"
+  },
+  "devDependencies": {
+    "ajv-cli": "^3.3.0",
+    "yaml-lint": "^1.2.4"
+  }
+}

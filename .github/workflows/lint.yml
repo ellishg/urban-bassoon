@@ -1,9 +1,11 @@
 name: Lint
-"on": [push]
+on: [push]
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - run: sudo apt-get install yamllint
       - uses: actions/checkout@v2
-      - run: yamllint .
+      - name: Install ⚙️
+        run: yarn install
+      - name: Lint 🧹
+        run: yarn lint
