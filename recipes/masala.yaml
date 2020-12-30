@@ -1,4 +1,4 @@
-title: Masala
+title: Basic Masala
 
 description:
   A base I use for Chana Masala and Chicken Masala.
@@ -7,7 +7,7 @@ ingredients:
   - name: onion
     amount: 1
 
-  - name: tomatoes
+  - name: medium tomatoes
     amount: 2
 
   - name: garlic cloves
@@ -30,7 +30,7 @@ ingredients:
     unit: teaspoons
 
   - name: red chili powder
-    amount: 1
+    amount: 0.5
     unit: teaspoons
 
   - name: tumeric
@@ -43,8 +43,13 @@ ingredients:
 
 directions:
   - Puree or finely chop the onion, tomatoes, garlic, and ginger.
-  - Pour mixture into a hot pan with oil.
-  - Stir constantly on high heat until it becomes a dark thick paste.
-  - Add the spices and mix well.
-  - Either add chick peas with extra water, or add chicken and cook on low heat.
+  - Pour the onion mixture into a hot pan with oil.
+  - Stir constantly on high heat until it becomes a dark thick paste. Most of
+    the water should be boiled off.
+  - Add the spices and mix well, but make sure it doesn't burn.
+  - Either add chick peas or chicken.
+  - For Chole Masala, add four cans of chick peas with extra water. Keep in
+    mind that it will thicken as it cools.
+  - For Chicken Masala, add two pounds of chicken and cook on low heat so that
+    the chicken release water for about 15 minutes.
   - Serve on rice.
