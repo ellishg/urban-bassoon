@@ -28,11 +28,11 @@ ingredients:
   - name: black pepper
     amount: 1
     unit: teaspoons
-  - name: Sesame Seeds
-    amount: 1
+  - name: Sesame seeds
+    amount: 0.5
     unit: cups
   - name: Sunflower seeds
-    amount: 1
+    amount: 0.5
     unit: cups
   - name: Brewer's Yeast (Nutritional yeast)
     amount: 1
