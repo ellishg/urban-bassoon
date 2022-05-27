@@ -20,7 +20,7 @@ ingredients:
 
   - name: canned whole tomatos
     amount: 5
-    units: cups
+    unit: cups
 
   - name: water
     amount: 1
