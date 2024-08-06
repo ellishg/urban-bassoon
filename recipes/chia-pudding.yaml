@@ -2,15 +2,18 @@ title: Chia Pudding
 
 description: Quick and easy high protein breakfast or light dessert.
 
+images:
+  - images/chia-pudding-nutrition.jpg
+
 ingredients:
   - name: Chia Seeds
-    amount: 0
+    amount: 0.5
     unit: cup
   - name: Whole Milk
-    amount: 0
+    amount: 0.75
     unit: cup
   - name: Earl Grey Tea (or other tea favorite)
-    amount: 0
+    amount: 0.75
     unit: cup
   - name: Maple Syrup
     amount: 1
