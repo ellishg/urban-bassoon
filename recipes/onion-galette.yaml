@@ -13,7 +13,7 @@ ingredients:
   - name: butter
     amount: 2
     unit: sticks
-    name: ice water
+  - name: ice water
     amount: 0.333
     unit: cups
   - name: onion
@@ -26,7 +26,7 @@ ingredients:
   - name: dijon
     amount: 2
     unit: tbsp
-  - name: blakc pepper
+  - name: black pepper
     amount: 1
     unit: pinch
 directions:
