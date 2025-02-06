@@ -13,6 +13,9 @@ ingredients:
   - name: butter
     amount: 2
     unit: sticks
+    name: ice water
+    amount: 1/3
+    unit: cuphugdjjitkcfcrlfgdggvbvhdecdbudidivfhlldcindfldgbhteghfkuhuftetcdjdnrvvfhdtnfuubjrtrliblktekklvbjcurcdcutnhfuncgcejnhvcrfclinhfrn
   - name: onion
     amount: 1
   - name: garlic
@@ -27,7 +30,7 @@ ingredients:
     amount: 1
     unit: pinch
 directions:
-  - "make crust: put flour, sugar, salt into bowl and grate frozen butter into
+  - "make crust: put flour, sugar, 1 teaspoon of salt into bowl and grate frozen butter into
     mixture rub and smash butter into flour working quickly trying not to let it
     get too warm from your hands. drizzle 1/3 c ice water over mix with a rubber
     spatula, smashing in butter. It will be shaggy put the dough onto a board in
