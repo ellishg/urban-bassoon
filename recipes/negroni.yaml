@@ -1,0 +1,21 @@
+title: Negroni
+description: A classic cocktail
+ingredients:
+  - name: Gin
+    amount: 1
+    unit: ounces
+  - name: Campari
+    amount: 1
+    unit: ounces
+  - name: Sweet Vermouth
+    amount: 1
+    unit: ounces
+  - name: Orange Peel
+    amount: 1
+directions:
+  - Mix or shake ingredients with ice
+  - Serve on ice in a lowball glass
+tags:
+  - cocktail
+  - gin
+  - vermouth
